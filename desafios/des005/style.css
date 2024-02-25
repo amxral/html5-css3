@@ -1,60 +1,97 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: 'bieber';
+    src: url('fonts/KLB_____.TTF') format('truetype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --cor01: #A575FF;
+    --cor02: #894DD1;
+    --cor03: #593382;
+    --cor04: #351E52;
+    --cor05: #120A1F;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: #C584B4;
-    position: relative;
-    font-family: 'Basic Commercial SR Pro';
-    font-weight: normal;
-    font-style: normal; 
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor01);
+    min-width: 300px;
 }
 
-.para {
-    font-family: 'Basic Commercial SR Pro';
-    font-weight: normal;
-    font-style: normal;
-    padding: 5px;
-    width: 600px;
-    text-align: center;
-}
+/* CABEÇALHO */
 
-h1 {
+header {
+    background-color: #9F5AF3;
     font-size: 2em;
+    font-family: 'bieber', Arial, Helvetica, sans-serif;
+    color: white;
     text-align: center;
-    background-color: white;
-    height: 3em;
-    margin: 0;
-    padding: 0;
 }
-
-h2 {
-    font-family: 'Basic Commercial SR Pro';
+header > h1 {
+    padding-top: 30px;
+    font-weight: normal;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.532);
+}
+nav {
+    background-color: #9F5AF3;
+    padding: 15px;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.338);
+    text-align: center;
+    margin-bottom: 30px;
+}
+nav > a {
+    color: white;
+    text-decoration: none;
     font-weight: bold;
-    font-style: normal;
-    font-size: 2em;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    text-shadow: 2px 2px 5px rgb(142, 141, 141);
-    
+    padding-right: 30px;
+}
+nav > a:hover {
+    text-decoration: underline;
 }
 
-div {
-    background-color: #FFC001;
-    width: 400px;
+/* CORPO DO SITE */
+
+.imagem { 
+    display: inline-block;
+}
+section {
+    background: #FFFFFF;
+    padding: 20px; 
+    margin: 20px;
+    min-width: 300px;
+    max-width: 1020px;
     border-radius: 15px;
-    box-shadow: 5px 5px 10px #886601;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.242);
     margin: auto;
-    
+}
+.conteudo {
+    display: inline-block;
+    max-width: 100vh;
+    margin: 20px;
+}
+h2 {
+    padding: 15px;
+}
+main p {
+    display: inline-block;
+    max-width: 100%;
+    text-indent: 40px;
+    line-height: 1.5em;
 }
 
-ul p{
-    padding: 5px;
-}
+/* RODAÉ */
 
-hr {
-    color: black;
+footer {
+    background-color: #120A1F;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    margin-top: 50px;
 }
