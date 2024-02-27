@@ -74,8 +74,9 @@ section.imagem {
     background-attachment: fixed;
 }
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.537);
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.288);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
     display: inline-block;
     padding: 8px;
     text-shadow: 1px 1px 0px black;
