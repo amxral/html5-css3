@@ -79,6 +79,11 @@ section {
 h2 {
     padding: 15px;
 }
+
+main {
+    height: 100vh;
+}
+
 main p {
     display: inline-block;
     max-width: 100%;
@@ -89,10 +94,9 @@ main p {
 /* RODAÉ */
 
 footer {
+    text-align: center;
     background-color: #120A1F;
     color: white;
     padding: 8px;
-    text-align: center;
     margin-top: 50px;
-    
 }
