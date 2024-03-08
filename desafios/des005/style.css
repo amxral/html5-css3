@@ -7,9 +7,16 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: basic;
+    src: url('fonts/BasicCommercialLT-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @media screen and (max-width: 768px) {
 
-    section > div > img {
+    section.bio > div.image-top > img#justin {
         padding-left: 45px;
         padding-right: 45px;
     }
@@ -30,8 +37,7 @@
         color: white;
         padding: 8px;
         position: absolute;
-        bottom: 0;
-        min-width: 96vw;
+        min-width: 95.5vw;
     }
     body {
         font-family: Arial, Helvetica, sans-serif;
@@ -39,6 +45,16 @@
         min-width: 300px;
         min-height: 100vh;
         position: relative;
+    }
+    div#drew img{
+        width: 300px;
+    }
+    
+    div#drew a {
+        width: 300px;
+        text-decoration: none;
+        color: black;
+        font-family: 'basic', Arial, Helvetica, sans-serif;
     }
 }
 
@@ -48,6 +64,7 @@
     --cor03: #593382;
     --cor04: #351E52;
     --cor05: #120A1F;
+    --amarelo: #FFC001;
 }
 
 * {
@@ -100,10 +117,18 @@ nav > a:hover {
     vertical-align: top;
     
 }
-section {
+section.bio {
     background: #FFFFFF;
     padding: 20px; 
     margin: 20px;
+    min-width: 300px;
+    max-width: 1020px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.242);
+    margin: auto;
+}
+section {
+    background: #FFFFFF;
     min-width: 300px;
     max-width: 1020px;
     border-radius: 15px;
@@ -145,6 +170,70 @@ main p {
     margin-top: 10px;
 }
 
+section.store {
+    margin-top: 20px;
+    margin-bottom: 100vh;
+    min-width: 300px;
+    max-width: 1020px;
+}
+
+section.store > h1 {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    font-family: 'basic', Arial, Helvetica, sans-serif;
+    color: #FFC001;
+    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.135);
+    background-color: #120A1F;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 3px 0px 5px #120a1fac;
+}
+
+section#drew > ul{
+    padding-bottom: 20px;
+}
+
+div#drew li {
+    display: inline-block;
+    width: 220px;
+    margin: 10px;
+    padding: 5px;
+    height: 430px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+div#drew li:hover {
+    border: 2px solid #FFC001;
+    border-radius: 10px;
+    height: 430px;
+
+    transition-duration: .2s; 
+}
+
+div#drew a {
+    text-decoration: none;
+    color: black;
+    font-family: 'basic', Arial, Helvetica, sans-serif;
+}
+div#drew p.title {
+    text-align: center;
+    padding: 0;
+}
+
+div#drew p.preco {
+    padding-left: 0;
+    text-align: right;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+}
+
+div#drew img{
+    width: 15vw;
+    margin-left: 8%;
+}
+
 /* RODAÉ */
 
 footer {
@@ -152,5 +241,5 @@ footer {
     background-color: #120A1F;
     color: white;
     padding: 8px;
-    margin-top: 100vh;
+    height: 20px;
 }
