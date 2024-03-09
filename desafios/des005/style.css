@@ -46,8 +46,8 @@
         min-height: 100vh;
         position: relative;
     }
-    div#drew img{
-        width: 300px;
+    div#drew img {
+        max-width: 150px;
     }
     
     div#drew a {
